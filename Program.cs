@@ -72,12 +72,36 @@ namespace Семинар6
         меньших заданного числа. Размерность массива –10. 
         Заполнение массива осуществить случайными числами от 50 до 100*/ 
 
+        /*
 
+        int[] Array = GetArray(10,50,100);
+        Console.WriteLine("Введите число:");
+        int Num = int.Parse(Console.ReadLine()!);
+
+        void FindProductUnderNum (int[] array, int num){
+            int result = 1;
+            int count = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] < num)
+                {
+                    result = result * array[i];
+                    count++;
+                    //Console.WriteLine(result);
+                }
+            }
+            if (count>1)
+            {
+                Console.WriteLine($"в массиве [{String.Join(",", array)}] произведение чисел меньше {num} = {result}");
+            }
+            else
+            {
+                Console.WriteLine($"в массиве [{String.Join(",", array)}] нет чисел меньше {num}");
+            }
         
+        }
 
-
-
-
+        FindProductUnderNum(Array,Num);
         
         
         int[] GetArray(int size, int minValue, int maxValue){
@@ -89,7 +113,7 @@ namespace Семинар6
         return res;
         }
 
-
+        */
             
             
             
